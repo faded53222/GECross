@@ -1,6 +1,6 @@
 # GECross: Gene embeddings enabled cross-species integration, mapping cell expression into an image representation
 
-PyTorch implementation of GECross, 
+PyTorch implementation of GECross, a deep learning method that directly leverages differences in gene function together with their expression patterns. By representing each cell as an image with genes assigned to pixels—its position defined by protein language model embeddings and its brightness by expression level—GECross enables cross-species integration without requiring predefined gene correspondences.
 
 <p align="center">
 <img src="https://github.com/faded53222/GECross/blob/main/fig/show_fig_main.png" width="1100" align="center">
