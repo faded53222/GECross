@@ -50,5 +50,5 @@ Running all cells in `data_acquisition&processing.ipynb`, `paint_cell_image_repr
 |http://snap.stanford.edu/saturn/data/tabula_mammal_export.tar.gz|Tabula Sapiens, Muris and Microcebus Coarse Whole Atlas Alignments and Individual Tissue alignemnts|
 |http://snap.stanford.edu/saturn/data/protein_embeddings.tar.gz|Protein Embeddings for analyzed species|
 
-To generate protein embeddings for new species or genes, you can follow the instructions at [link](https://github.com/snap-stanford/SATURN/tree/main/protein_embeddings).
+To generate protein embeddings for more species or genes, you can follow the instructions at [link](https://github.com/snap-stanford/SATURN/tree/main/protein_embeddings).
 
