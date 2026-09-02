@@ -3,5 +3,5 @@
 PyTorch implementation of GECross, 
 
 <p align="center">
-<img src="https://github.com/faded53222/GECross/blob/main/fig/show_fig_main.pdf" width="1100" align="center">
+<img src="https://github.com/faded53222/GECross/blob/main/fig/show_fig_main.png" width="1100" align="center">
 </p>
