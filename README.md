@@ -14,11 +14,41 @@ GECross is composed of two main processes:
 - Construct corresponding image representations based on the gene expression of each cell (`paint_cell_image_representations.ipynb`).
 - Learn cross-species integrated cell embeddings through supervised metric learning (`GECross.ipynb`).
 
+`data_acquisition&processing.ipynb` covers the full pipeline from raw data download to preparing the direct input data required by `paint_cell_image_representations.ipynb`.
+
 `analysis&draw_graphs.ipynb` provides an example of analyzing the results from GECross and reproduces all figures presented in the paper.
 
 `ablation_study.ipynb` evaluates the importance of key design choices in GECross via ablation experiments.
 
 `reimplemented_SATURN.ipynb` is a faithful reimplementation of the compared state-of-the-art [method](https://www.biorxiv.org/content/10.1101/2023.02.03.526939v1).
 
-`data_acquisition&processing.ipynb` covers the full pipeline from raw data download to preparing the direct input data required by `paint_cell_image_representations.ipynb`.
+## Setting up GECross
+
+### Requirements
+
+Install required python module via:
+
+```
+pip install -r requirements.txt
+```
+
+## Running GECross
+
+To run GECross, use the `GECross.ipynb` file.
+
+Running all cells in `data_acquisition&processing.ipynb`, `paint_cell_image_representations.ipynb`, and `GECross.ipynb`sequentially will yield the integration results for (1) frog and zebrafish embryogenesis datasets and (2) blood cells from Tabula Sapiens, Tabula Muris, and Tabula Microcebus cell atlas datasets.
+
+## GECross Output
+
+`GECross.ipynb` will output AnnData files at `./use_data/Save_for_Drawing/{save_name}_embedding.h5ad`, with `.X` = integrated cell embeddings, `.obs` = cell ID, species, cell type.
+
+## Data Availability
+
+|Link|Description|
+|----|-----------|
+|http://snap.stanford.edu/saturn/data/frog_zebrafish_export.tar.gz|Frog and Zebrafish Embryogenesis Alignment|
+|http://snap.stanford.edu/saturn/data/tabula_mammal_export.tar.gz|Tabula Sapiens, Muris and Microcebus Coarse Whole Atlas Alignments and Individual Tissue alignemnts|
+|http://snap.stanford.edu/saturn/data/protein_embeddings.tar.gz|Protein Embeddings for analyzed species|
+
+To generate protein embeddings for new species or genes, you can follow the instructions at [link](https://github.com/snap-stanford/SATURN/tree/main/protein_embeddings).
 
