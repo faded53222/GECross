@@ -14,5 +14,11 @@ GECross is composed of two main processes:
 - Construct corresponding image representations based on the gene expression of each cell (`paint_cell_image_representations.ipynb`).
 - Learn cross-species integrated cell embeddings through supervised metric learning (`GECross.ipynb`).
 
+`analysis&draw_graphs.ipynb` provides an example of analyzing the results from GECross and reproduces all figures presented in the paper.
 
+`ablation_study.ipynb` evaluates the importance of key design choices in GECross via ablation experiments.
+
+`reimplemented_SATURN.ipynb` is a faithful reimplementation of the compared state-of-the-art [method](https://www.biorxiv.org/content/10.1101/2023.02.03.526939v1).
+
+`data_acquisition&processing.ipynb` covers the full pipeline from raw data download to preparing the direct input data required by `paint_cell_image_representations.ipynb`.
 
